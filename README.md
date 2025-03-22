@@ -49,11 +49,12 @@ Un foro estilo Reddit construido con **Laravel 12** en el backend e **Inertia.js
    ```bash
    cp .env.example .env
    ```
-2. Genera la clave de la aplicación y ejecuta las migraciones con datos de prueba:
+2. Configura el servicio de correo en `.env`. Soporta **Mailtrap, MailHog, SMTP, Gmail, Amazon SES**, etc.
+3. Se requiere que los usuarios verifiquen su correo antes de usar algunas funciones.
+4. Genera la clave de la aplicación y ejecuta las migraciones con datos de prueba:
    ```bash
    php artisan key:generate
    php artisan migrate --seed
-   ```
 ---
 
 ## 🚀 Uso
